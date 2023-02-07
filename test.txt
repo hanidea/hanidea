@@ -1,1 +1,6 @@
-hello from B
+sudo docker run --detach \
+  --hostname 10.100.220.0 \
+  --publish 13800:80 --publish 13822:22 \
+  --name gitlab_test \
+  --restart always \
+  gitlab/gitlab-ce:latest
